@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginVertical="8dp"
+    android:elevation="6dp"
+    app:cardCornerRadius="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/item_mini_service_provider_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6sp"
+            android:text="ARVIND LIFESTYLE BRANDS LIMITED"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_mini_service_provider_card_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mini_service_provider_card_name"
+            android:text="Bengaluru,"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_mini_service_provider_card_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mini_service_provider_card_district"
+            android:layout_marginTop="6dp"
+            android:text="Karnataka"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_mini_service_provider_card_pncd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mini_service_provider_card_name"
+            android:layout_marginStart="5sp"
+            android:layout_toEndOf="@id/item_mini_service_provider_card_district"
+            android:text="560001"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

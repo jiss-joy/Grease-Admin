@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ServiceProviderDetailsActivity">
+
+    <include
+        android:id="@+id/service_provider_toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/service_provider_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/service_provider_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="10sp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tv_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GSTIN:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/service_provider_gstin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5sp"
+                android:layout_toEndOf="@id/tv_6"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_0"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/service_provider_gstin"
+                android:layout_marginVertical="8sp"
+                android:background="#B59C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_0"
+                android:text="Business Name:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/service_provider_bName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_0"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5sp"
+                android:layout_toEndOf="@id/tv_6"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/service_provider_bName"
+                android:layout_marginVertical="8sp"
+                android:background="#B59C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_1"
+                android:text="PAN Number:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/service_provider_pan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5sp"
+                android:layout_toEndOf="@id/tv_6"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/service_provider_pan"
+                android:layout_marginVertical="8sp"
+                android:background="#B59C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_2"
+                android:text="Address:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/service_provider_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5sp"
+                android:layout_toEndOf="@id/tv_6"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/service_provider_address"
+                android:layout_marginVertical="8sp"
+                android:background="#B59C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_3"
+                android:text="Nature of Business:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/service_provider_nob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5sp"
+                android:layout_toEndOf="@id/tv_6"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/service_provider_nob"
+                android:layout_marginVertical="8sp"
+                android:background="#B59C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_4"
+                android:text="Registration Date:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/service_provider_reg_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5sp"
+                android:layout_toEndOf="@id/tv_6"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/service_provider_reg_date"
+                android:layout_marginVertical="8sp"
+                android:background="#B59C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_5"
+                android:text="Department Code and \nType:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/service_provider_dept_code_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_5"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5sp"
+                android:layout_toEndOf="@id/tv_6"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/service_provider_dept_code_type"
+                android:layout_marginVertical="8sp"
+                android:background="#B59C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_6"
+                android:text="State Code and \nPin Code:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/service_provider_st_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_6"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5sp"
+                android:layout_toEndOf="@id/tv_6"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_7"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/tv_7"
+                android:layout_marginVertical="8sp"
+                android:background="#B59C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_7"
+                android:text="Status:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/service_provider_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_7"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5sp"
+                android:layout_toEndOf="@id/tv_6"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/service_provider_view_staff_btn"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_below="@id/service_provider_status"
+                android:layout_marginHorizontal="32sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="20sp"
+                android:elevation="6sp"
+                app:nb_backgroundColor="@color/primary"
+                app:nb_focusColor="@color/primary_light"
+                app:nb_radius="4dp"
+                app:nb_text="View Staff"
+                app:nb_textAllCaps="true"
+                app:nb_textColor="@color/white"
+                app:nb_textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

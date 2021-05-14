@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Activities.RegistrationVerificationActivity">
+
+    <include
+        android:id="@+id/registration_verification_toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GSTIN:"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/registration_verification_gstin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:text="32AAFKNS7ND7DN1"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/registration_verification_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableStart="@drawable/warning"
+            android:drawablePadding="10sp"
+            android:drawableTint="@color/red"
+            android:text="No Record Found!"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/registration_verification_gst_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/registration_verification_verify_btn">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Business Name:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/registration_verification_bName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5sp"
+                    android:layout_toEndOf="@id/tv_6"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/registration_verification_bName"
+                    android:layout_marginVertical="8sp"
+                    android:background="#B59C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_1"
+                    android:text="PAN Number:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/registration_verification_pan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5sp"
+                    android:layout_toEndOf="@id/tv_6"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/registration_verification_pan"
+                    android:layout_marginVertical="8sp"
+                    android:background="#B59C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_2"
+                    android:text="Address:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/registration_verification_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5sp"
+                    android:layout_toEndOf="@id/tv_6"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/registration_verification_address"
+                    android:layout_marginVertical="8sp"
+                    android:background="#B59C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_3"
+                    android:text="Nature of Business:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/registration_verification_nob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5sp"
+                    android:layout_toEndOf="@id/tv_6"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/registration_verification_nob"
+                    android:layout_marginVertical="8sp"
+                    android:background="#B59C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_4"
+                    android:text="Registration Date:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/registration_verification_reg_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5sp"
+                    android:layout_toEndOf="@id/tv_6"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/registration_verification_reg_date"
+                    android:layout_marginVertical="8sp"
+                    android:background="#B59C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_5"
+                    android:text="Department Code and \nType:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/registration_verification_dept_code_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5sp"
+                    android:layout_toEndOf="@id/tv_6"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/registration_verification_dept_code_type"
+                    android:layout_marginVertical="8sp"
+                    android:background="#B59C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_6"
+                    android:text="State Code and \nPin Code:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/registration_verification_st_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5sp"
+                    android:layout_toEndOf="@id/tv_6"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/tv_7"
+                    android:layout_marginVertical="8sp"
+                    android:background="#B59C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_7"
+                    android:text="Status:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/registration_verification_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_7"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5sp"
+                    android:layout_toEndOf="@id/tv_6"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/registration_verification_verify_btn"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:elevation="6dp"
+            android:padding="10dp"
+            app:nb_backgroundColor="@color/orange"
+            app:nb_focusColor="@color/yellow"
+            app:nb_text="VERIFY GSTIN"
+            app:nb_textAllCaps="true"
+            app:nb_textColor="@color/white"
+            app:nb_textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/registration_verification_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/registration_verification_decline_btn"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_weight="0.5"
+                android:elevation="6dp"
+                android:padding="10dp"
+                app:nb_backgroundColor="@color/red"
+                app:nb_focusColor="@color/light_red"
+                app:nb_text="DECLINE"
+                app:nb_textAllCaps="true"
+                app:nb_textColor="@color/white"
+                app:nb_textSize="16sp" />
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/registration_verification_approve_btn"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_weight="0.5"
+                android:elevation="6dp"
+                android:padding="10dp"
+                app:nb_backgroundColor="@color/green"
+                app:nb_focusColor="@color/light_green"
+                app:nb_text="APPROVE"
+                app:nb_textAllCaps="true"
+                app:nb_textColor="@color/white"
+                app:nb_textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="75sp"
+        android:layout_alignParentTop="true"
+        android:background="@color/primary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_service_providers_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp" />
+
+</RelativeLayout>

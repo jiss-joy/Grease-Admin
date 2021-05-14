@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Grease Admin</string>
+    <string name="app_version">Grease Admin v1.0.0</string>
+
+    //Firebase Admin UID
+    <string name="admin_uid">arAfXG1ehMeQbyBD4Xb89op5DIg1</string>
+    <string name="key_secret">JOXa6G6GIBWagzflwx6w7KyaKVD3</string>
+
+    <string name="temp_gstin">32AABFJ628D1ZI</string>
+    <string name="temp_number">+91-9865324105</string>
+
+    //Drawer Strings
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+</resources>
